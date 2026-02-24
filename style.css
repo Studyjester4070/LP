@@ -120,7 +120,7 @@ html {
 .logo-header {
     position: absolute;
     top: 24px;
-    left: 24px;
+    left: 59px;
     z-index: 10;
 }
 
@@ -1986,7 +1986,7 @@ body {
 .logo-header {
     position: absolute;
     top: 20px;
-    left: calc(2% + 30px);
+    left: calc(2% + 65px);
     z-index: 100;
 }
 
