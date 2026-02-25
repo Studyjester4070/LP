@@ -657,8 +657,10 @@
                 // Initialize Supabase
                 let supabase = null;
                 if (window.supabase) {
-                    supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
-                    console.log('✅ Supabase initialized inline');
+                    supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY, {
+                        db: { schema: 'tefilho' }
+                    });
+                    console.log('✅ Supabase initialized inline with schema tefilho');
                 } else {
                     console.error('❌ Supabase library not loaded');
                     showNotification('Erro: Biblioteca de conexão não carregada via CDN.', 'error');
